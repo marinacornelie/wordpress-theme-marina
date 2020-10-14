@@ -27,7 +27,21 @@ body {
     color: black;
 }
 
-a.navbar-item:hover {
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: #4a4a4a;
+    display: block;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+    position: relative;
+}
+
+a.menu-item:hover {
     background-color: #fafafa;
     color: #72d4cb;
 }

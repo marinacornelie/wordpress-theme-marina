@@ -6,10 +6,37 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-        <title><?php wp_title(); ?></title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-        <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
     </head>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class= "navbar-item" href="<?php echo home_url(); ?>">
+           
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        </div>
+    </div>
+</nav>
+
+<section class="hero header">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title centered">
+    
+      </h1>
+      <h2 class="subtitle centered">
+       
+      </h2>
+    </div>
+  </div>
+</section>
