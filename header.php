@@ -1,3 +1,9 @@
+<?php 
+   $custom_logo_id = get_theme_mod( 'custom_logo' );
+   $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+?>
+
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
@@ -12,9 +18,9 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class= "navbar-item" href="<?php echo home_url(); ?>">
-        
-        </a>
+         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="menu-item" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+            <img src="<?php echo $image[0]; ?>" class="header-logo" alt="logo">
+         </a>
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>

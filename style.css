@@ -14,6 +14,11 @@ Version: 1.0
     border-width: thin;
 }
 
+.header-logo {
+    max-height: 20px;
+    max-width: 40px;
+}
+
 .centered {
     text-align: center;
 }
