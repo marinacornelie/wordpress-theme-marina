@@ -55,6 +55,10 @@ a.menu-item:hover {
     color: black;
 }
 
+nav {
+    overflow: hidden;
+}
+
 .navbar-link:hover {
     background-color: #fafafa;
     color: #72d4cb;
