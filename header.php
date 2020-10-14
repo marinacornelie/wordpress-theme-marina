@@ -13,7 +13,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class= "navbar-item" href="<?php echo home_url(); ?>">
-           
+        
         </a>
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -32,10 +32,10 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title centered">
-    
+        <?php bloginfo( name ); ?>
       </h1>
       <h2 class="subtitle centered">
-       
+        <?php bloginfo( description ); ?>
       </h2>
     </div>
   </div>
