@@ -2,7 +2,7 @@
 
 <article class="hero">
     <main>
-        <section class="section ghost-content">
+        <section class="section wp-content">
             <?php
             the_content();
             ?>
