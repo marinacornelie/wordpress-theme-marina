@@ -34,16 +34,31 @@ body {
 
 .menu {
     display: flex;
+    height: 100%;
 }
 
 .menu-item {
-    flex-grow: 0;
-    flex-shrink: 0;
-    color: #4a4a4a;
-    display: block;
-    line-height: 1.5;
-    padding: .5rem .75rem;
-    position: relative;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 0.75em;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        display: block;
+    }
+    .menu-item {
+        padding-left: 0.75em;
+    }
+}
+
+.center-logo {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding-left: 0.75em;
 }
 
 a.menu-item:hover {
