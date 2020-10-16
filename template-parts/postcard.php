@@ -10,7 +10,7 @@
                         <img src="<?php the_post_thumbnail(); ?>" alt="Feature Image">  
                     </figure>
                 </a>
-            <?php else : ?>
+            <?php else: ?>
                 <figure class="image is-4by3"></figure>
             <?php endif; ?>
         </div> 
