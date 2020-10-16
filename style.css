@@ -36,6 +36,12 @@ body {
     display: flex;
 }
 
+@media screen and (max-width: 1023px) {
+    .menu {
+        display: block;
+    }
+}
+
 .menu-item {
     flex-grow: 0;
     flex-shrink: 0;
