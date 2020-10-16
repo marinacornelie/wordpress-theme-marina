@@ -22,5 +22,6 @@ add_theme_support( 'custom-logo', array(
 add_action( 'init', 'register_my_menu' );
 add_action( 'wp_footer', 'my_deregister_scripts' );
 add_action('wp_enqueue_scripts','theme_scripts_function');
+add_theme_support( 'post-thumbnails' );
 
 ?>
