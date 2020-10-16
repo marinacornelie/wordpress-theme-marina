@@ -37,6 +37,12 @@ body {
     height: 100%;
 }
 
+@media screen and (max-width: 1023px) {
+    .menu {
+        display: block;
+    }
+}
+
 .menu-item {
     color: black;
     display: flex;
