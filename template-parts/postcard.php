@@ -14,5 +14,13 @@
                 <figure class="image is-4by3"></figure>
             <?php endif; ?>
         </div> 
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <?php the_time('j M Y') ?>
+            </p> 
+            <p class="card-footer-item">
+
+             </p>
+        </footer>
     </div>
 </div>
