@@ -7,7 +7,7 @@
             <?php if ( has_post_thumbnail() ): ?>
                 <a href="<?php the_permalink(); ?>">
                     <figure class="image is-4by3">
-                        <img src="<?php the_post_thumbnail(); ?>" alt="Feature Image">  
+                        <?php the_post_thumbnail(); ?>
                     </figure>
                 </a>
             <?php else: ?>
