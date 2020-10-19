@@ -19,8 +19,8 @@
                 <?php the_time('j M Y') ?>
             </p> 
             <p class="card-footer-item">
-
-             </p>
+                <?php the_tags( '', $sep, $after ); ?> 
+            </p>
         </footer>
     </div>
 </div>
