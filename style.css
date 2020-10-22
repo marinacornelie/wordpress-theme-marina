@@ -112,6 +112,10 @@ a.card-header-title {
     display: block;
 }
 
+.card-header {
+    height: 45px;
+}
+
 .columns.is-variable .column {
     padding-top: var(--columnGap);
     padding-bottom: var(--columnGap);
