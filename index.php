@@ -11,6 +11,14 @@
             </div>
         <?php endwhile; ?>
     </div>
+    <div class="pagination-container">
+        <nav class="pagination is-small" role="navigation" aria-label="pagination">  
+            <?php 
+            previous_posts_link(); 
+            next_posts_link(); 
+            ?>
+        </nav>
+    </div>
 </main>
 
 <?php get_footer(); ?>
