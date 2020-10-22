@@ -16,6 +16,12 @@ function limit_to_one_tags($terms) {
 return array_slice($terms,0,1,true);
 }
 
+function posts_on_indexpage($query) {
+    if ($query->is_home() && $query->is_main_query()) {
+        $query->set('posts_per_page', 6);
+    }
+}
+
 add_theme_support('custom-logo', array(
 	'height'      => 100,
 	'width'       => 400,
@@ -28,5 +34,6 @@ add_action('wp_footer', 'my_deregister_scripts');
 add_action('wp_enqueue_scripts','theme_scripts_function');
 add_theme_support('post-thumbnails');
 add_filter('term_links-post_tag','limit_to_one_tags');
+add_action('pre_get_posts', 'posts_on_indexpage');
 
 ?>
