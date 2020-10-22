@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
-        <meta charset="<?php bloginfo( 'charset' ); ?>" />
+        <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
@@ -18,7 +18,7 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="menu-item center-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+         <a href="<?php echo esc_url(home_url('/')); ?>" class="menu-item center-logo" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
             <img src="<?php echo $image[0]; ?>" class="header-logo" alt="logo">
          </a>
         <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
@@ -29,7 +29,7 @@
     </div>
     <div id="navMenu" class="navbar-menu">
         <div class="navbar-start">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            <?php wp_nav_menu(array('theme_location' => 'header-menu')); ?>
         </div>
     </div>
 </nav>
@@ -38,10 +38,10 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title centered">
-        <?php bloginfo( name ); ?>
+        <?php bloginfo(name); ?>
       </h1>
       <h2 class="subtitle centered">
-        <?php bloginfo( description ); ?>
+        <?php bloginfo(description); ?>
       </h2>
     </div>
   </div>

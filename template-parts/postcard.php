@@ -4,7 +4,7 @@
             <a href= "<?php the_permalink(); ?>" class="card-header-title"><?php the_title(); ?></a>
         </div>
         <div class="post-image">
-            <?php if ( has_post_thumbnail() ): ?>
+            <?php if (has_post_thumbnail()): ?>
                 <a href="<?php the_permalink(); ?>">
                     <figure class="image is-4by3">
                         <?php the_post_thumbnail(); ?>
@@ -19,8 +19,8 @@
                 <?php the_time('j M Y') ?>
             </p> 
             <p class="card-footer-item">
-                <?php the_tags( '', $sep, $after ); ?> 
-                <?php if (count ( wp_get_post_terms($post->ID) ) > 1 ): ?>
+                <?php the_tags('', $sep, $after); ?> 
+                <?php if (count (wp_get_post_terms($post->ID)) > 1 ): ?>
                     <span>,...</span>
                 <?php endif ; ?>
             </p>
