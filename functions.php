@@ -27,7 +27,7 @@ add_theme_support('custom-logo', array(
 	'width'       => 400,
 	'flex-height' => true,
 	'flex-width'  => true,
-	'header-text' => array( 'site-title', 'site-description' ),
+	'header-text' => array('site-title', 'site-description'),
 	) );
 add_action('init', 'register_my_menu');
 add_action('wp_footer', 'my_deregister_scripts');

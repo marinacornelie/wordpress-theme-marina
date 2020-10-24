@@ -20,7 +20,7 @@
             </p> 
             <p class="card-footer-item">
                 <?php the_tags('', $sep, $after); ?> 
-                <?php if (count (wp_get_post_terms($post->ID)) > 1 ): ?>
+                <?php if (count (wp_get_post_terms($post->ID)) > 1): ?>
                     <span>,...</span>
                 <?php endif ; ?>
             </p>
