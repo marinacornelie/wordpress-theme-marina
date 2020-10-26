@@ -16,7 +16,7 @@
             <?php if (get_previous_posts_link()): ?>
                 <span class="pagination-previous"><?php previous_posts_link(); ?></span>
             <?php endif; ?>
-            <span><?php $current_page = max(1, get_query_var('paged'));
+            <span class="pagination-page"><?php $current_page = max(1, get_query_var('paged'));
             $total_pages = $wp_query->max_num_pages;
             echo 'Page '.$current_page.' of '.$total_pages; ?></span>
             <?php if (get_next_posts_link()): ?>
