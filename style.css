@@ -237,6 +237,10 @@ a.card-header-title {
     margin: auto;
 }
 
+.wp-caption {
+    max-width: 100%;
+}
+
 .wp-content h2 {
     font-weight: bold;
     font-weight: bold;
