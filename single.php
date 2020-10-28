@@ -8,7 +8,7 @@
             </div>
             <div class="subtitle is-6">
                 <time><?php the_time('j M Y') ?></time>
-                <span>on <?php the_tags('', $sep, $after); ?></span>
+                <span class="tags">on <?php the_tags('', $sep, $after); ?></span>
             <div>
             <div class="title is-4 center"><?php the_title(); ?></div>
         </header>
