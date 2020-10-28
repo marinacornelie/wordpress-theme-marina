@@ -12,8 +12,14 @@ function theme_scripts_function() {
 	wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js');
 }
 
-function limit_to_one_tags($terms) {
-return array_slice($terms,0,1,true);
+function the_first_tag($post) {
+	$the_tags = get_the_tags($post->ID);
+	echo $the_tags[0]->name;
+}
+
+function number_of_tags($post) {
+	$the_tags = get_the_tags($post->ID);
+	return count($the_tags);
 }
 
 function posts_on_indexpage($query) {
@@ -33,7 +39,6 @@ add_action('init', 'register_my_menu');
 add_action('wp_footer', 'my_deregister_scripts');
 add_action('wp_enqueue_scripts','theme_scripts_function');
 add_theme_support('post-thumbnails');
-add_filter('term_links-post_tag','limit_to_one_tags');
 add_action('pre_get_posts', 'posts_on_indexpage');
 
 ?>
