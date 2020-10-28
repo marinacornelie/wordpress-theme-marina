@@ -4,7 +4,7 @@
     <main>
     <header class="post-header post-header-border">
             <div class="title is-6 fw-normal">
-                <span>By <?php the_author(); ?></span>
+                <span>By <?php the_author_posts_link(); ?></span>
             </div>
             <div class="subtitle is-6">
                 <time><?php the_time('j M Y') ?></time>
