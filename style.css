@@ -272,7 +272,7 @@ a.card-header-title {
     margin-left: -1em
 }
 
-.wp-content pre, .wp-content code, .wp-content img, .wp-content ol, .wp-content blockquote, .wp-content table {
+.wp-content pre, .wp-content code, .wp-content img, .wp-content ol, .wp-content blockquote, .wp-content table, .wp-content dl {
     margin-bottom: 20px;
 }
 
