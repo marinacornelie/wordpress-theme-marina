@@ -26,6 +26,7 @@ Version: 1.0
 body {
     font-family:'Lato', sans-serif;
     color: black;
+    background: #00325808;
 }
 
 .title, .subtitle {
@@ -101,7 +102,12 @@ a {
 }
 
 a:hover {
+    color:#c7728f;
+}
+
+.navbar-menu a:hover {
     font-size: larger;
+    color: black;
 }
 
 .card a {
@@ -152,10 +158,6 @@ a.card-header-title {
     transition: all 0.3s;
 }
 
-.border:hover {
-    color: black;
-}
-
 .pagination-container {
     display: flex;
     justify-content: center;
@@ -184,7 +186,7 @@ a.card-header-title {
 }
 
 .footer {
-    background-color: #f1999214;
+    background-color: white;
     padding: 1.5rem 0.75rem 3rem;
     border-top: solid;
     border-width: thin;
