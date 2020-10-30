@@ -13,8 +13,14 @@ function theme_scripts_function() {
 }
 
 function the_first_tag($post) {
-	$the_tags = get_the_tags($post->ID);
-	echo $the_tags[0]->name;
+    if ($posttags = get_the_tags()) 
+    {
+        $tag = current($posttags);
+        printf(
+            '<a href="%1$s" itemprop="url"><span itemprop="title">%2$s</span></a>',
+            get_tag_link($tag->term_id),
+            esc_html($tag->name));
+    }
 }
 
 function number_of_tags($post) {
