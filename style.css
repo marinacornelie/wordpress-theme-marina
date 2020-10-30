@@ -268,7 +268,7 @@ a.card-header-title {
     margin-bottom: 20px;
 }
 
-.wp-content li::before{
+.wp-content ul > li::before {
     content: "\2022";
     color: #003258;
     display: inline-block; 
