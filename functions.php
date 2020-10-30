@@ -30,7 +30,7 @@ function number_of_tags($post) {
 
 function posts_on_indexpage($query) {
     if ($query->is_home() && $query->is_main_query()) {
-        $query->set('posts_per_page', 6);
+        $query->set('posts_per_page', 3);
     }
 }
 

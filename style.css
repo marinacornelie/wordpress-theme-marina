@@ -8,7 +8,7 @@ Version: 1.0
 */
 
 .header {
-    background-color:#72d4cb;
+    background-color:#003258;
     border-bottom: solid;
     border-top: solid;
     border-width: thin;
@@ -24,12 +24,16 @@ Version: 1.0
 }
 
 body {
-    font-family: Raleway;
+    font-family:'Lato', sans-serif;
     color: black;
 }
 
 .title, .subtitle {
     color: black;
+}
+
+.is-light {
+    color: #f7f7f7;
 }
 
 .menu {
@@ -68,8 +72,8 @@ body {
 }
 
 a.menu-item:hover {
-    background-color: #fafafa;
-    color: #72d4cb;
+    background-color: white;
+    color: #003258;
 }
 
 .navbar-link {
@@ -81,8 +85,8 @@ nav {
 }
 
 .navbar-link:hover {
-    background-color: #fafafa;
-    color: #72d4cb;
+    background-color: white;
+    color: #003258;
 }
 
 .navbar-link:not(.is-arrowless)::after {
@@ -93,11 +97,11 @@ a {
     color: black;
     cursor: pointer;
     text-decoration: none;
+    transition: all 0.3s; 
 }
 
 a:hover {
-    background-color: #fafafa;
-    color: #72d4cb;
+    font-size: larger;
 }
 
 .card a {
@@ -143,13 +147,13 @@ a.card-header-title {
 .border {
     border-style: solid;
     border-width: thin;
-    color: black;
+    color: #f1999214;
     border-radius: 5px;
     transition: all 0.3s;
 }
 
 .border:hover {
-    color: #f68446;
+    color: black;
 }
 
 .pagination-container {
@@ -180,7 +184,7 @@ a.card-header-title {
 }
 
 .footer {
-    background-color: #72d4cb12;
+    background-color: #f1999214;
     padding: 1.5rem 0.75rem 3rem;
     border-top: solid;
     border-width: thin;
@@ -220,7 +224,7 @@ a.card-header-title {
 
 .post-image {
     padding: 20px;
-    background: #f167391c;
+    background: white;
 }
 
 .center {
@@ -266,7 +270,7 @@ a.card-header-title {
 
 .wp-content li::before{
     content: "\2022";
-    color:  #72d4cb;
+    color: #003258;
     display: inline-block; 
     width: 1em;
     margin-left: -1em

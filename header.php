@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <?php wp_head(); ?>
     </head>
@@ -37,10 +37,10 @@
 <section class="hero header">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title centered">
+      <h1 class="title is-light centered">
         <?php bloginfo(name); ?>
       </h1>
-      <h2 class="subtitle centered">
+      <h2 class="subtitle is-light centered">
         <?php bloginfo(description); ?>
       </h2>
     </div>
