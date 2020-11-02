@@ -72,22 +72,12 @@ body {
     padding-left: 0.75em;
 }
 
-a.menu-item:hover {
-    background-color: white;
-    color: #003258;
-}
-
 .navbar-link {
     color: black;
 }
 
 nav {
     overflow: hidden;
-}
-
-.navbar-link:hover {
-    background-color: white;
-    color: #003258;
 }
 
 .navbar-link:not(.is-arrowless)::after {
@@ -106,8 +96,7 @@ a:hover {
 }
 
 .navbar-menu a:hover {
-    font-size: larger;
-    color: black;
+    color: #c7728f;
 }
 
 .card a {
