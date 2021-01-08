@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <article class="hero">
-<header class="post-header post-header-border">
+    <header class="post-header post-header-border">
         <div class="title is-4 center">
             <?php echo get_the_title($ID); ?>
         </div>
